@@ -1,0 +1,81 @@
+*{
+    font-family: 'roboto';
+}
+
+body{
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #FCFCFC;
+    border-radius: 21px;
+    box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.25);
+    width: 655px;
+    min-height: 350px;
+}
+
+.card .container-imagem{
+    width: 278px;
+    height: 283px;
+}
+
+.card .faq{
+    padding: 50px;
+}
+
+.card .faq .border{
+    border-bottom: 2px solid #D4D4D4;
+    border-top: 2px solid #D4D4D4;
+}
+
+.card .faq .titulo-principal{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.card .faq .container-pergunta{
+    height: 50px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card .faq .container-pergunta.ativado{
+    height: 120px;
+}
+
+.card .faq .container-pergunta .seta{
+    background: url('../images/seta-fechada.png');
+    width: 15px;
+    height: 9px;
+}
+
+.card .faq .container-pergunta .pergunta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card .pergunta h3{
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.card .faq .resposta{
+    font-size: 15px;
+    font-weight: 300;
+    width: 340px;
+    padding: 15px 0;
+}
+
+.card .faq .container-pergunta.ativado .seta{
+    background: url('../images/seta-aberta.png');
+}
